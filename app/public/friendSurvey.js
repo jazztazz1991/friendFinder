@@ -12,6 +12,6 @@ $("#add-btn").on("click", function(){
 
                 $.post("/api/new", newPerson)
                     .done(function(data) {
-                    $("#friend").html("<h5>" + data.name + "</h5><br><img src='" + data.photo + "'>");
+                    $("#friend").html("<h5>" + data.name + "</h5><br><img src='" + data.photo + "' style='width: 250px' style='height:250px'>");
                   });
             })
