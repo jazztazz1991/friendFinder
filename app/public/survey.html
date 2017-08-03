@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Friend Finder</title>
+      <!-- Latest compiled and minified CSS & JS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <h2>Survey Questions</h2>
+            <hr>
+            <h1>About You</h1>
+            <h3>Name: (Required)</h3>
+            <input type="text" name="username" id="name" required>
+            <h3>Link to Photo of You: (Required)</h3>
+            <input type="text" name="username" id="photo" required>
+            <hr>
+            <h3>QUESTION 1</h3>
+            <h4>Do you like mornings?</h4>
+            <select id="question1">
+                <option selected="selected" disabled="disabled"> </option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+            <h3>QUESTION 2</h3>
+            <h4>Do you like Dogs?</h4>
+            <select id="question2">
+                <option selected="selected" disabled="disabled"> </option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+            <h3>QUESTION 3</h3>
+            <h4>Do you like Cats?</h4>
+            <select id="question3">
+                <option selected="selected" disabled="disabled"> </option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+            <h3>QUESTION 4</h3>
+            <h4>Do you like Clubs?</h4>
+            <select id="question4">
+                <option selected="selected" disabled="disabled"> </option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+            <h3>QUESTION 5</h3>
+            <h4>Do you like Football?</h4>
+            <select id="question5">
+                <option selected="selected" disabled="disabled"> </option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+            <h3>QUESTION 6</h3>
+            <h4>Do you like WaWa?</h4>
+            <select id="question6">
+                <option selected="selected" disabled="disabled"> </option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+            <h3>QUESTION 7</h3>
+            <h4>Do you like Programming?</h4>
+            <select id="question7">
+                <option selected="selected" disabled="disabled"> </option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+            <h3>QUESTION 8</h3>
+            <h4>Do you like Physical Fitness?</h4>
+            <select id="question8">
+                <option selected="selected" disabled="disabled"> </option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+            <h3>QUESTION 9</h3>
+            <h4>Do you like Apple Products?</h4>
+            <select id="question9">
+                <option selected="selected" disabled="disabled"> </option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+            <h3>QUESTION 10</h3>
+            <h4>Do you like Android Products?</h4>
+            <select id="question10">
+                <option selected="selected" disabled="disabled"> </option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+            
+            
+            <br>
+            <p><a class="btn btn-primary btn-lg" href="#" id="add-btn" role="button" data-toggle="modal" data-target="#myModal">Submit <span class="glyphicon glyphicon-share-alt"></span></a></p>
+            <hr>
+            <a href="#">API Friend List</a> | <a href="#">GitHub Repo</a>
+        </div>
+        
+        
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Your Match</h4>
+              </div>
+              <div class="modal-body">
+                  <div id="friend"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        
+        <script type="text/javascript" src="assets/friend.js"></script>
+    </body>
+</html>
